@@ -1,0 +1,246 @@
+/**
+ *
+ * STYLE: FREEMAN GLOBAL
+ *
+ */
+
+ .FL-container {
+
+    width: 80%;
+    margin: auto;
+    padding: 15px 30px;
+ }
+
+ #responsive-menu-pro-button {
+
+     background: transparent !important;
+
+     .responsive-menu-pro-inner {
+
+         background-color: $primary !important;
+
+         &::before {
+
+             background-color: $primary !important;
+         }
+
+         &::after {
+
+             background-color: $primary !important;
+         }
+     }
+ }
+
+
+
+/* -------------- BANNER CONTENT STYLE START -------------- */
+
+#FL-banner-content-bg {
+
+    .tve-content-box-background {
+
+        @media (max-width: 766px) {
+            background-size: 100% 100% !important;
+        }
+    }
+
+    .tve-cb {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .thrv-content-box {
+
+        @media (max-width: 766px) {
+
+            max-width: 80% !important;
+            margin: auto !important;
+            // padding-top: 50px !important;
+        }
+    }
+}
+
+/* -------------- BANNER CONTENT STYLE END -------------- */
+
+
+/* ---------- BUTTON STYLE START ---------- */
+.fm-button-fill {
+
+    color: $white;
+    border-radius: 200px;
+    background-color: $cg-button !important;
+    padding: 20px 30px;
+    min-width: 200px;
+    text-align: center;
+
+    &:hover {
+
+        background-color: transparent !important;
+        border: 2px solid $cg-button;
+    }
+}
+
+.fm-button {
+
+    color: $white;
+    border-radius: 200px;
+    border: 2px solid $cg-button;
+    background-color: transparent !important;
+    padding: 20px 30px;
+    min-width: 200px;
+    text-align: center;
+
+    &:hover {
+
+        background-color: $cg-button !important;
+        color: $white;
+    }
+}
+/* ---------- BUTTON STYLE END ---------- */
+
+.view-desktop {
+
+    display: block;
+
+    @media (max-width: 1199px) {
+
+        display: none;
+    }
+}
+
+.view-tab {
+
+    display: none;
+    width: 80%;
+    margin: auto;
+
+    @media (max-width: 1199px) {
+
+        display: block !important;
+    }
+
+    @media (max-width: 766px) {
+
+        display: none !important;
+    }
+}
+
+.view-mb {
+
+    display: none;
+    width: 100%;
+    margin: auto;
+
+    @media (max-width: 765px) {
+
+        display: block !important;
+    }
+}
+
+
+
+/* ---------- TESTIMONIAL STYLE START ----------- */
+
+#FL-our-clients-testimonial {
+
+    .sp-testimonial-free-section {
+
+        .tfree-testimonial-title {
+
+            display: none !important;
+        }
+
+        .slick-dots {
+
+            padding-left: 0px !important;
+            margin-left: 0px !important;
+
+            li {
+
+                button {
+                    background: transparent !important;
+                    border: 1px solid $cg-accent !important;
+                }
+
+                &.slick-active {
+
+                    button {
+
+                        background: $cg-accent !important;
+                    }
+                }
+            }
+        }
+
+        .tfree-client-rating {
+
+            color: $cg-accent !important;
+        }
+    }
+
+    .slick-arrow {
+        display: none !important;
+    }
+}
+
+/* ---------- TESTIMONIAL STYLE END ----------- */
+
+
+
+/* ----------- BOOKING CALENDER STYLE START -----------*/
+
+#FL-booking-calender {
+
+    .bk_calendar_frame {
+
+        margin: auto;
+    }
+
+    .wpdevelop {
+
+        div {
+
+            &:last-child {
+
+                // display: none !important;
+            }
+        }
+    }
+}
+
+/* ----------- BOOKING CALENDER STYLE END -----------*/
+
+
+
+
+/* ------------ OUR WORK STYLE START -------------- */
+
+#FL-our-work {
+
+    .envira-gallery-item {
+
+        img {
+
+            width: 100%;
+        }
+    }
+}
+
+/* ------------ OUR WORK STYLE END -------------- */
+
+
+#general-blog-page-header {
+
+    h1 {
+
+        color: $white;
+    }
+
+    .container-fluid {
+
+        width: 90%;
+        margin: auto;
+    }
+}

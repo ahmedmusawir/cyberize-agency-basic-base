@@ -33,7 +33,7 @@ get_header(); ?>
 <div id="primary" class="content-area container pt-5 pb-5">
 	<div class="row">
 		
-		<main id="main" class="site-main col-sm-12 col-md-12 col-lg-9">
+		<main id="main" class="site-main col-sm-12 col-md-12 col-lg-8">
 
 			<?php
 			while ( have_posts() ) : the_post();
@@ -50,7 +50,7 @@ get_header(); ?>
 
 		</main><!-- #main -->
 
-		<div class="col-sm-12 col-md-12 col-lg-3">
+		<div class="col-sm-12 col-md-12 col-lg-4">
 
 			<?php get_sidebar(); ?>
 			

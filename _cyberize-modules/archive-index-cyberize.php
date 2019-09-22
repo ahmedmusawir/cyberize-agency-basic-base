@@ -9,12 +9,12 @@
 <style type="text/css">
 	#general-blog-page-header {
 		width: 100vw;
-		height: 300px;
+		height: 380px;
 		background-color: rgba(189, 198, 18, .55);
 		background-image: url('<?php echo get_field('blog_page_header_image', 'option')['url'] ?>');
 		background-size: cover;
 		background-position: top center;
-		padding: 11rem 15px 0px;
+		padding: 13rem 15px 0px;
 		margin-bottom: 30px;
 	}
 </style>
@@ -22,7 +22,7 @@
 
 <!-- Page Header with image -->
 <section id="general-blog-page-header">
-	<div class="container-fluid">
+	<div class="container">
 		<!-- <h1><?php // the_field('blog_index_title', 'option') ?></h1> -->
 		<h1>Portfolio</h1>
 	</div>

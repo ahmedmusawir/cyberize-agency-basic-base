@@ -4,20 +4,34 @@
  * MODULE: Search Index Gulf Coast w Sidebar
  */
 ?>
-<section class="search-index-gulfcoast">
+
+<style type="text/css">
+	#general-blog-page-header {
+		width: 100vw;
+		height: 380px;
+		background-color: rgba(189, 198, 18, .55);
+		background-image: url('<?php echo get_field('blog_page_header_image', 'option')['url'] ?>');
+		background-size: cover;
+		background-position: top center;
+		padding: 13rem 15px 0px;
+	}
+</style>
+
+<section id="general-blog-page-header">
+	<div class="container">
+		<h1>Search Results</h1>
+	</div>
+</section>
+<section class="blog-index-block-freeman">
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 
-			<div class="block-after-header text-center">
-				<h1><?php the_field('search_index_title', 'option') ?></h1>
-			</div>
-
 			<section class="container">
 
-				<div class="row">
+				<div class="row m-5">
 
-					<div class="col-sm-12 col-md-12 col-lg-9">
+					<div class="col-sm-12 col-md-12 col-lg-12">
 
 						<main id="main" class="site-main">
 
@@ -25,7 +39,7 @@
 							if ( have_posts() ) : ?>
 
 								<header class="page-header">
-									<h4 class="search-type"><?php
+									<h4 class="search-type mb-5"><?php
 										/* translators: %s: search query. */
 										printf( esc_html__( 'Search Results for: %s', 'moose-framework-2' ), '<span>' . get_search_query() . '</span>' );
 									?></h4>
@@ -47,7 +61,7 @@
 								?>
 
 								<div class="post-nav-holder">
-									<?php the_posts_navigation(); ?>
+									<?php // the_posts_navigation(); ?>
 								</div>
 
 
@@ -60,12 +74,6 @@
 							endif; ?>
 
 						</main><!-- #main -->
-
-					</div>
-
-					<div class="col-sm-12 col-md-12 col-lg-3">
-
-						<?php get_sidebar(); ?>
 
 					</div>
 

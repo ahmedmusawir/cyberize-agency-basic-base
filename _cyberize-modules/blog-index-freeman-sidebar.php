@@ -9,13 +9,12 @@
 <style type="text/css">
 	#general-blog-page-header {
 		width: 100vw;
-		height: 300px;
+		height: 380px;
 		background-color: rgba(189, 198, 18, .55);
-		background-image: url('<?php the_field('blog_page_header_image', 'option') ?>');
+		background-image: url('<?php echo get_field('blog_page_header_image', 'option')['url'] ?>');
 		background-size: cover;
 		background-position: top center;
-		padding: 11rem 15px 0px;
-		margin-bottom: 30px;
+		padding: 13rem 15px 0px;
 	}
 </style>
 

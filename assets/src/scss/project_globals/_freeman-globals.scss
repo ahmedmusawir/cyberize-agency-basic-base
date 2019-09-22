@@ -4,6 +4,41 @@
  *
  */
 
+#general-blog-page-header {
+
+    h1 {
+        color: $white;
+        font-size: 3.7rem;
+        margin: 0 0 10px;
+        padding: 0 0 10px;
+        position: relative;
+        margin-top: -1rem;
+
+        &::after {
+            background-color: white; 
+            bottom: -20px;
+            content: '';
+            display: block;
+            height: .6rem;
+            left: 2.5%;
+            position: absolute;
+            transform: translate(-30%,0);
+            width: 70px;
+
+            @media (max-width: 900px) {
+                left: 3%;
+            }
+            @media (max-width: 650px) {
+                left: 5%;
+            }
+            @media (max-width: 400px) {
+                left: 8%;
+            }
+        }
+    }
+}
+
+
  .FL-container {
 
     width: 80%;
@@ -231,16 +266,3 @@
 /* ------------ OUR WORK STYLE END -------------- */
 
 
-#general-blog-page-header {
-
-    h1 {
-
-        color: $white;
-    }
-
-    .container-fluid {
-
-        width: 90%;
-        margin: auto;
-    }
-}

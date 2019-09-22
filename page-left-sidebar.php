@@ -30,7 +30,7 @@ get_header(); ?>
 	<!-- <img class="img-fluid" src="/wp-content/uploads/2018/02/general-page-header-2400x300.jpg"> -->
 </section>
 
-<div id="primary" class="content-area container pt-5">
+<div id="primary" class="content-area container pt-5 pb-5">
 	<div class="row">
 		<div class="col-sm-12 col-md-12 col-lg-3">
 

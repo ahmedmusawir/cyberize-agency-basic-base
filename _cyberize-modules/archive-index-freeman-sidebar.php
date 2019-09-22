@@ -10,19 +10,17 @@ get_header(); ?>
 <style type="text/css">
 	#general-blog-page-header {
 		width: 100vw;
-		height: 320px;
+		height: 380px;
 		background-color: rgba(189, 198, 18, .55);
 		background-image: url('<?php echo get_field('blog_page_header_image', 'option')['url'] ?>');
 		background-size: cover;
 		background-position: top center;
 		padding: 13rem 15px 0px;
-		margin-bottom: 60px;
 	}
 </style>
 
 <section id="general-blog-page-header">
-	<div class="container-fluid">
-		<!-- <h1><?php the_field('blog_index_title', 'option') ?></h1> -->
+	<div class="container">
 		<h1>Archive</h1>
 	</div>
 </section>
@@ -34,7 +32,7 @@ get_header(); ?>
 
 			<section class="container">
 
-				<div class="row">
+				<div class="row m-5">
 
 
 					<div class="col-sm-12 col-md-12 col-lg-12">
@@ -44,8 +42,7 @@ get_header(); ?>
 
 							<header class="page-header">
 									<?php
-										the_archive_title( '<h4 class="archive-type">', '</h4>' );
-										//the_archive_description( '<div class="archive-description">', '</div>' );
+										the_archive_title( '<h4 class="archive-type mb-5">', '</h4>' );
 									?>
 								<!-- <div class="long-underline"></div>	 -->
 
@@ -64,7 +61,7 @@ get_header(); ?>
 
 							endwhile;
 
-							the_posts_navigation();
+							// the_posts_navigation();
 
 						else :
 

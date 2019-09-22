@@ -12,7 +12,7 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class('post-single'); ?>>
 	<section class="post-freeman">
 
-		<div class="entry-content container-fluid">
+		<div class="entry-content">
 
 			<!--<h1 class="blog-index-title col-sm-6 col-md-3 col-lg-3 text-center">
 				<?php //the_field('blog_index_title', 'option') ?>

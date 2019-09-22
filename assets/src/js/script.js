@@ -1,23 +1,34 @@
-// jQuery(document).ready(function($) {
+/**
+ * Manage global libraries like jQuery or THREE from the package.json file
+ */
 
-//   var adminContent = $( 'body' );
-//   console.log( adminContent );
-//   alert(adminContent);
-
-//   adminContent.click( function(){
-
-//   	$( this ).css('border', '1rem solid red');
-
-//   });
-	
-// });
-
-
-
-class App {
-	constructor() {
-		console.info( 'ES6 App Initialized!' );
-	}
-}
+// Import custom modules
+import App from './modules/app-es6.js';
 
 const app = new App();
+
+
+/**
+ *
+ * MAKE DROPDOWN MENU PARENT CLICKABLE. TURNS 'CLICK TO DROP' TO 'HOVER TO DROP'
+ *
+ */
+
+jQuery(function($) {
+
+  if ($(window).width() > 769) {
+    $('.navbar .dropdown').hover(function() {
+      $(this).find('.dropdown-menu').first().stop(true, true).delay(250).slideDown();
+
+    }, function() {
+      $(this).find('.dropdown-menu').first().stop(true, true).delay(100).slideUp();
+
+    });
+
+    $('.navbar .dropdown > a').click(function() {
+      location.href = this.href;
+    });
+
+  }
+  
+});

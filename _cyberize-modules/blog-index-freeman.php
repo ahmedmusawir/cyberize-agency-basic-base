@@ -9,13 +9,12 @@
 <style type="text/css">
 	#general-blog-page-header {
 		width: 100vw;
-		height: 320px;
+		height: 380px;
 		background-color: rgba(189, 198, 18, .55);
 		background-image: url('<?php echo get_field('blog_page_header_image', 'option')['url'] ?>');
 		background-size: cover;
 		background-position: top center;
 		padding: 13rem 15px 0px;
-		margin-bottom: 60px;
 	}
 </style>
 
@@ -26,14 +25,14 @@
 
 			<!-- Page Header with image -->
 			<section id="general-blog-page-header">
-				<div class="container-fluid">
+				<div class="container">
 					<h1><?php the_field('blog_index_title', 'option') ?></h1>
 				</div>
 			</section>
 
 			<section class="container">
 
-				<div class="row">
+				<div class="row m-5">
 
 					<div class="col-sm-12 col-md-12 col-lg-12">
 

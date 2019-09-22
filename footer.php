@@ -10,19 +10,18 @@
  */
 
 ?>
-<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 	</div><!-- #content -->
 
 	<footer id="footer-vizrek" class="site-footer">
 
 		<figure class="text-center mb-5">
-			<img class="img-fluid w-25" src="/wp-content/uploads/2019/07/LogoWhite.png" alt="">
+			<img class="img-fluid pl-4 pr-4" src="/wp-content/uploads/2019/09/LOGOWHITE.png" alt="">
 		</figure>
 
 
-		<div class="container-fluid widgets_wrapper ml-5">
+		<div class="container widgets_wrapper">
 		   <div class="row">
-		      <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+		      <div class="col-12 col-sm-12 col-md-6 col-lg-3">
 
 				<?php
 
@@ -38,7 +37,7 @@
 
 		        
 		      </div>
-		      <div class="col-12 col-sm-12 col-md-4 col-lg-3">
+		      <div class="col-12 col-sm-12 col-md-6 col-lg-3">
 
 				<?php
 
@@ -54,7 +53,7 @@
 
 		         
 		      </div>
-		      <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+		      <div class="col-12 col-sm-12 col-md-6 col-lg-3">
 
 				<?php
 
@@ -69,7 +68,7 @@
 					</aside><!-- #secondary -->
 
 		      </div>
-		      <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+		      <div class="col-12 col-sm-12 col-md-6 col-lg-3">
 
 				<?php
 
@@ -86,34 +85,22 @@
 		      </div>
 		      
 		   </div> <!-- END ROW -->
-		   <div class="row">
-				<div class="copyright d-none">
-				<a href="<?php echo esc_url( __( 'https://cyberizegroup.com/', 'moose-framework-2' ) ); ?>"><?php
-					/* translators: %s: CMS name, i.e. WordPress. */
-					printf( esc_html__( 'Proudly powered by %s', 'moose-framework-2' ), 'MooseFramework 2.0' );
-				?></a>
-				<span class="sep"> | </span>
-				All Rights Reserved <a href="https://cyberizegroup.com" target="_blank">Cyberizegroup.com</a> &copy;2019
-				
-				</div><!-- .copyright -->	
-			</div>		
+		   
 		</div> <!-- END WIDGET WRAPPER -->
 		<section class="site-info container">
 
-			<div class="">
-				<div class="copyright  d-flex align-items-center">
-					<div class="text-center mx-auto">
+			<div class="copyright  d-flex align-items-center">
+				<div class="text-center mx-auto">
 
-						<a href="<?php echo esc_url( __( 'https://cyberizegroup.com/', 'moose-framework-2' ) ); ?>"><?php
-							printf( esc_html__( 'Copyright &copy; All Rights Reserved', 'moose-framework-2' ), 'CyberizeFramework' );
-						?></a>
-						<span class="sep"> | </span>
-						<?php the_field('theme_footer_text', 'option') ?>
+					<?php
+						printf( esc_html__( 'Copyright &copy; All Rights Reserved', 'moose-framework-2' ), 'CyberizeFramework' );
+					?>
+					<span class="sep"> | </span>
+					<?php the_field('theme_footer_text', 'option') ?>
 
-					</div>	
-						
-				</div>						
-			</div>
+				</div>	
+					
+			</div>						
 			
 		</section>
 
@@ -121,9 +108,9 @@
 				=            THIS IS FOR DEBUGGING. PLZ DISABLE WHEN READY TO PUBLISH            =
 				===============================================================================-->
 				
-				<!-- <div style="color: white"><strong>Current template:</strong>  -->
-					<?php //  echo get_current_template( true ); ?>
-				<!-- </div> -->
+				<div style="color: white"><strong>Current template:</strong> 
+					<?php  echo get_current_template( true ); ?>
+				</div>
 				
 				<!-- ====  End of THIS IS FOR DEBUGGING. PLZ DISABLE WHEN READY TO PUBLISH  ==== -->
 						

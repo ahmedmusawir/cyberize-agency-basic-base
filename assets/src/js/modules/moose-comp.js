@@ -1,18 +1,18 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
-class AppThree extends React.Component { 
+class MooseComp extends React.Component { 
     handleClick(e) { 
-        console.log('Running React App 3'); 
-        alert('Running React App 3'); 
+        console.log('Running React App 1'); 
+        alert('Moose Component is working');
     }
 
     render() {
         return (
             <div className="app-content container">
-                <h1 className="jumbotron">React App 3 Works!</h1>
+                <h1 className="jumbotron">This is a Moose Component</h1>
                 <article>
-                    <h3>Moose is Loose</h3>
+                    <h3>Gulp React - Updated 10 Sep 2019</h3>
                     <p>
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate eos fugiat
                         vel necessitatibus dolores molestiae quas, praesentium similique, est minima
@@ -24,4 +24,6 @@ class AppThree extends React.Component {
             </div>
         )
     }
-} ReactDOM.render(<AppThree/>, document.getElementById('app3'));
+}
+
+export default MooseComp;

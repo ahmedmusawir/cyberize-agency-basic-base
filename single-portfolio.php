@@ -12,7 +12,7 @@ get_header(); ?>
 <style type="text/css">
 	#general-blog-page-header {
 		width: 100vw;
-		height: 320px;
+		height: 380px;
 		background-color: rgba(189, 198, 18, .55);
 		background-image: url('<?php echo get_field('blog_page_header_image', 'option')['url'] ?>');
 		background-size: cover;
@@ -23,8 +23,8 @@ get_header(); ?>
 </style>
 
 <section id="general-blog-page-header">
-	<div class="container-fluid">
-		<!-- <h1><?php the_field('blog_index_title', 'option') ?></h1> -->
+	<div class="container">
+		<!-- <h1><?php //the_field('blog_index_title', 'option') ?></h1> -->
 		<h1>Portfolio Item</h1>
 	</div>
 </section>
@@ -32,7 +32,7 @@ get_header(); ?>
 
 <div id="primary" class="content-area">
 	<!-- <div class="row"> -->
-		<main id="main" class="site-main">
+		<main id="main" class="site-main container">
 
 			<?php
 			while ( have_posts() ) : the_post();
